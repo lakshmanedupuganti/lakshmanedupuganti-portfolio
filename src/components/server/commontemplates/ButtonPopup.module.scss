@@ -1,0 +1,12 @@
+@import "/styles/defaultincludes";
+
+.contentContainer {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: var(--alignItems, center);
+  text-align: var(--alignItems, center);
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}

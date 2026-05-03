@@ -1,0 +1,34 @@
+@import "/styles/defaultincludes";
+@import "/styles/globalclasses";
+
+.commonHeadingContainer {
+  position: relative;
+  padding: 1rem 0rem 1.5rem;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1rem 0rem 2rem;
+    width: 60%;
+  }
+  &.noHeadingContainer {
+    padding: 2.5rem 0rem;
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 0rem;
+    }
+  }
+
+  &.withBackground {
+    :global(.displayTitle2) {
+      color: #fff;
+    }
+    color: #fff;
+  }
+}

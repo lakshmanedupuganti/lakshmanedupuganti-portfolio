@@ -1,0 +1,84 @@
+@import "/styles/defaultincludes";
+
+.videoWrapper {
+  position: relative;
+}
+
+.videoPlayer {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.videoPlayerImage {
+  object-position: center top !important;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 200px;
+  
+
+  @include media-breakpoint-up(lg) {
+    height: 500px;
+  }
+}
+
+.playButton {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  &.xs {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &.sm {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &.md {
+    svg {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  &.lg {
+    svg {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &.xl {
+    svg {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}

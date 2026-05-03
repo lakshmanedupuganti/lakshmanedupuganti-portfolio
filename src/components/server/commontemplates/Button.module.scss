@@ -1,0 +1,171 @@
+@import "/styles/defaultincludes";
+
+@keyframes link-button-animation {
+  50% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(lg) {
+    width: initial;
+  }
+}
+
+.styledButton {
+  --btnHeightDef: var(--btnHeight, var(--btnHeight-md));
+  --btnPaddingDef: var(--btnPadding, var(--btnPadding-md));
+  --btnFontSizeDef: var(--btnFontSize, var(--btnFontSize-md));
+  --btnColorDef: var(--btnColor, var(--btnColor-blue));
+  --btnHoverColorDef: var(--btnHoverColor, var(--btnHoverColor-blue));
+
+  border: 2px solid var(--btnColorDef);
+  padding: var(--btnPaddingDef);
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+
+  &:hover,
+  &:not(:disabled):not(.disabled):active,
+  &:focus {
+    border: 2px solid var(--btnHoverColorDef);
+  }
+
+  // Primary button
+
+  &.primary {
+    background-color: var(--btnColorDef);
+    color: var(--fontColor-white, #fff);
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:focus {
+      background-color: var(--btnHoverColorDef);
+      color: var(--fontColor-white, #fff);
+    }
+    &:disabled {
+      background-color: var(--btnColorDef);
+      color: var(--fontColor-white, #fff);
+      border: 2px solid var(--btnColorDef);
+    }
+  }
+
+  // Secondary button
+
+  &.secondary {
+    background-color: var(--bkgColor-white, #fff);
+    color: var(--btnColorDef);
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:focus {
+      background-color: var(--btnColorDef);
+      border: 2px solid var(--btnColorDef, #fff);
+      color: #ffffff;
+    }
+    &:disabled {
+      background-color: var(--btnColorDef);
+      border: 2px solid var(--btnHoverColorDef, #fff);
+      color: #ffffff;
+    }
+  }
+
+  // Primary white button
+  &.primary-white {
+    background-color: var(--btnColorDef);
+    border: 2px solid var(--bkgColor-white, #fff);
+    color: #ffffff;
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:focus {
+      background-color: var(--bkgColor-white, #fff);
+      border: 2px solid var(--bkgColor-white);
+      color: var(--btnColorDef);
+    }
+    &:disabled {
+      background-color: #ffffff;
+      color: var(--btnColorDef);
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:focus {
+      background-color: var(--btnHoverColorDef);
+      border: 2px solid var(--btnHoverColorDef);
+      color: #ffffff;
+    }
+  }
+
+  // link type button
+
+  &.link {
+    font-weight: 500;
+    height: 32px;
+    min-height: auto;
+    padding: 0px;
+    border: none;
+    display: flex;
+    align-items: center;
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:focus {
+      text-decoration: none;
+      border: none;
+      .linkbuttonArrow {
+        animation: link-button-animation 0.7s linear infinite;
+      }
+    }
+  }
+
+  .linkbuttonArrow {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-left: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: initial;
+
+    &:hover {
+      animation: link-button-animation 0.7s linear infinite;
+    }
+  }
+
+  :global(.link2) {
+    text-transform: none;
+  }
+}
+
+//TODO: re-work on this
+
+.imageButton {
+  --btnHeightDef: var(--btnHeight, var(--btnHeight-sm));
+
+  cursor: pointer;
+  filter: brightness(1);
+  height: var(--btnHeightDef);
+
+  &.active {
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  &.center {
+    margin: 0 auto !important;
+    display: block;
+  }
+}

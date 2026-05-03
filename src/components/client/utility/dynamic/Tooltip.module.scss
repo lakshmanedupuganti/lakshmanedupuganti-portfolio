@@ -1,0 +1,67 @@
+@import "/styles/defaultincludes";
+
+.container {
+  position: absolute;
+  z-index: 3;
+  top: calc(var(--top) * 1px);
+  right: calc(var(--right) * 1px);
+  bottom: calc(var(--bottom) * 1px);
+  left: calc(var(--left) * 1px);
+  width: 25px;
+  height: 30px;
+  user-select: none;
+}
+
+.icon {
+  color: $blue;
+
+  &.error {
+    color: $danger;
+  }
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 30px;
+}
+
+.bubble {
+  position: absolute;
+  background: white;
+  font-size: 0.75em;
+  width: calc(var(--bubbleWidth, 200) * 1px);
+  max-width: 80vw;
+  right: 46px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  &:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: -8px;
+    transform: rotate(45deg);
+  }
+}
+
+.questiontip {
+  width: 350px;
+  max-width: 400px;
+  background-color: $primary-charcoal;
+  color: white;
+  border-radius: 5px;
+  &:after {
+    background-color: $primary-charcoal;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 280px;
+  }
+}

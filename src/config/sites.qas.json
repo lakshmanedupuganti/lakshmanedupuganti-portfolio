@@ -1,0 +1,636 @@
+[
+    {
+      "id": "us",
+      "domain": "us-qas-proweb.smile-view.com",
+      "flagCode": "USA",
+      "locales": [
+        {
+          "id": "en-US",
+          "globalSiteGtagKey": "",
+          "slugPrefix": "provider/",
+          "hotjarKey": "2383702",
+          "gtmKey": "GTM-KNVNK92",
+          "optimizelyKey": "15140190703"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "US"
+    },
+    {
+      "id": "ca",
+      "domain": "ca-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-CA",
+          "language": "English",
+          "slugPrefix": "provider/",
+          "defaultTrustArcLang": "en",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-M8TB4SV"
+        },
+        {
+          "id": "fr-CA",
+          "language": "Français",
+          "slugPrefix": "fr/provider/",
+          "defaultTrustArcLang": "fr",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-M8TB4SV"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "defaultTrustArcCountry": "ca",
+      "localRegion": "US"
+    },
+    {
+      "id": "br",
+      "domain": "br-qas-proweb.smile-view.com",
+      "flag": "br",
+      "flagCode": "BR",
+      "locales": [
+        {
+          "id": "pt-BR",
+          "slugPrefix": "doutor/",
+          "globalSiteGtagKey": "",
+          "gtmKey": "GTM-K6J477J",
+          "optimizelyKey": "20784111147",
+          "defaultTrustArcLang": "pt_br"
+        }
+      ],
+      "defaultTrustArcCountry": "br",
+      "localRegion": "US"
+    },
+    {
+      "id": "hk",
+      "domain": "hk-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-HK",
+          "slugPrefix": "en/provider/",
+          "globalSiteGtagKey": "UA-125801379-1",
+          "hotjarKey": "",
+          "gtmKey": "GTM-PSQXKR3K"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "my",
+      "domain": "my-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-MY",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-P2D276LC"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "id",
+      "domain": "id-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-ID",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-MHFV24DL"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "vn",
+      "domain": "vn-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "vi-VN",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-5MZW27ZM"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "th",
+      "domain": "th-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-TH",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-WQD4Z7NW"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "sg",
+      "domain": "sg-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-SG",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-NN4T8GPS"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "ph",
+      "domain": "ph-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-PH",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-KFLC9Q8J"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "au",
+      "domain": "au-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-AU",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "UA-125810261-1",
+          "hotjarKey": "",
+          "gtmKey": "GTM-MRRPQN7N"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "nz",
+      "domain": "nz-qas-proweb.smile-view.com",
+      "flag": "nz",
+      "locales": [
+        {
+          "id": "en-NZ",
+          "slugPrefix": "provider/",
+          "language": "english",
+          "gtmKey": "GTM-WJT6MD9Q"
+        }
+      ],
+      "localRegion": "APAC"
+    },
+    {
+      "id": "tw",
+      "domain": "tw-qas-proweb.smile-view.com",
+      "flag": "tw",
+      "locales": [
+        {
+          "id": "zh-Hant-TW",
+          "slugPrefix": "provider/",
+          "gtmKey": "GTM-N42V762V"
+        }
+      ],
+      "localRegion": "APAC"
+    },
+    {
+      "id": "in",
+      "domain": "in-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-IN",
+          "slugPrefix": "provider/",
+          "hotjarKey": "",
+          "gtmKey": "GTM-NRR73RTX"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "evergageEnabled": true,
+      "localRegion": "APAC"
+    },
+    {
+      "id": "in",
+      "domain": "in-qas-ts.invisalign.hamburg",
+      "locales": [
+        {
+          "id": "en-IN",
+          "slugPrefix": "provider/",
+          "hotjarKey": "",
+          "gtmKey": "GTM-5L77KHT"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "jp",
+      "domain": "jp-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "ja-JP",
+          "slugPrefix": "professional/",
+          "hotjarKey": "",
+          "gtmKey": "GTM-M3756VB4"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "jp",
+      "domain": "www.ppr.invisalign.co.jp",
+      "locales": [
+        {
+          "id": "ja-JP",
+          "slugPrefix": "professional/",
+          "hotjarKey": "",
+          "gtmKey": "GTM-M3756VB4"
+        }
+      ],
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    },
+    {
+      "id": "gb",
+      "flag": "gb",
+      "domain": "gb-qas-proweb.smile-view.com",
+      "flagCode": "UK",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "en-GB",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "gtmKey": "GTM-WSVX36SR"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "eu",
+      "flagCode": "EMEA",
+      "domain": "eu-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "en-EMEA",
+          "language": "English",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "GTM-WSVX36SR"
+        },
+        {
+          "id": "fr-EU",
+          "language": "Français",
+          "slugPrefix": "provider/fr/",
+          "splitSlugPrefix": "fr/",
+          "gtmKey": "GTM-WSVX36SR"
+        },
+        {
+          "id": "nl-EU",
+          "language": "Dutch",
+          "slugPrefix": "provider/nl/",
+          "splitSlugPrefix": "nl/",
+          "gtmKey": "GTM-WSVX36SR"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "es",
+      "flagCode": "ES",
+      "domain": "es-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "incProfilePagesInSiteMap": true,
+      "locales": [
+        {
+          "id": "es-ES",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "",
+          "hotjarKey": "3553570",
+          "optimizelyKey": "22037401195"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "it",
+      "flagCode": "IT",
+      "domain": "it-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "it-IT",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "",
+          "optimizelyKey": "22536470970"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "fr",
+      "flagCode": "FR",
+      "domain": "fr-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "fr-FR",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "",
+          "optimizelyKey": "22563231241"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "de",
+      "flagCode": "DE",
+      "domain": "de-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "de-DE",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "",
+          "hotjarKey": "3553573",
+          "optimizelyKey": "22551001699"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "il",
+      "flagCode": "IL",
+      "domain": "il-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "en-IL",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "pl",
+      "flagCode": "PL",
+      "domain": "pl-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "pl-PL",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "nl",
+      "flagCode": "NL",
+      "domain": "nl-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "nl-NL",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "ch",
+      "flagCode": "CH",
+      "domain": "ch-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "de-CH",
+          "language": "Deutsch",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": ""
+        },
+        {
+          "id": "fr-CH",
+          "language": "Français",
+          "slugPrefix": "provider/fr/",
+          "splitSlugPrefix": "fr/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": ""
+        },
+        {
+          "id": "it-CH",
+          "language": "Italiano",
+          "slugPrefix": "provider/it/",
+          "splitSlugPrefix": "it/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "no",
+      "flagCode": "NO",
+      "domain": "no-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "nb-NO",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": "",
+          "defaultTrustArcLang": "no"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "se",
+      "flagCode": "SE",
+      "domain": "se-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "sv-SE",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "dk",
+      "flagCode": "DK",
+      "domain": "dk-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "da-DK",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "fi",
+      "flagCode": "FI",
+      "domain": "fi-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "fi-FI",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "gtmKey": ""
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "africa",
+      "flagCode": "AFRICA",
+      "domain": "af-qas-proweb.smile-view.com",
+      "split": [
+        "ortho",
+        "gp"
+      ],
+      "locales": [
+        {
+          "id": "en-AF",
+          "language": "English",
+          "slugPrefix": "provider/",
+          "splitSlugPrefix": "",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-WSVX36SR",
+          "defaultHrefLang": "en-ZA",
+          "defaultCountryTag": "ZA"
+        },
+        {
+          "id": "fr-AF",
+          "language": "Français",
+          "slugPrefix": "provider/fr/",
+          "splitSlugPrefix": "fr/",
+          "globalSiteGtagKey": "",
+          "hotjarKey": "",
+          "gtmKey": "GTM-WSVX36SR",
+          "defaultCountryTag": "ZA"
+        }
+      ],
+      "localRegion": "EMEA"
+    },
+    {
+      "id": "kr",
+      "domain": "kr-qas-proweb.smile-view.com",
+      "locales": [
+        {
+          "id": "ko-KR",
+          "slugPrefix": "provider/",
+          "globalSiteGtagKey": "",
+          "gtmKey": "GTM-5KTMMWHP"
+        }
+      ],
+      "evergageEnabled": true,
+      "googleKey": "",
+      "facebookKey": "",
+      "localRegion": "APAC"
+    }
+  ]

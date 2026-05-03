@@ -1,0 +1,24 @@
+@import "/styles/defaultincludes";
+
+.contentContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 15px;
+  display: flex;
+  align-items: var(--alignItems, center);
+  text-align: var(--alignItems, center);
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 35px 46px;
+  }
+}
+
+.ctaList {
+  display: flex;
+  justify-content: var(--alignItems, center);;
+  align-items: var(--alignItems, center);
+  gap: 1rem;
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "gb",
+    "flag": "gb",
+    "flagCode": "UK",
+    "domain": "localhost",
+    "split": [
+      "ortho",
+      "gp"
+    ],
+    "locales": [
+      {
+        "id": "de-DE",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-WSVX36SR",
+        "optimizelyKey": "22536111630"
+      }
+    ],
+    "localRegion": "gb"
+  },
+  {
+    "id": "us",
+    "domain": "us.localhost.com",
+    "flagCode": "USA",
+    "locales": [
+      {
+        "id": "en-US",
+        "globalSiteGtagKey": "",
+        "slugPrefix": "provider/",
+        "hotjarKey": "2383702",
+        "gtmKey": "GTM-KNVNK92",
+        "optimizelyKey": "15140190703",
+        "privacyPolicySlug": "privacy-policy"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "evergageEnabled": true,
+    "localRegion": "US"
+  },
+  {
+    "id": "gb",
+    "flag": "gb",
+    "flagCode": "UK",
+    "domain": "gb.invisalign.local",
+    "split": [
+      "ortho",
+      "gp"
+    ],
+    "locales": [
+      {
+        "id": "en-GB",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-WSVX36SR",
+        "optimizelyKey": "22536111630"
+      }
+    ],
+    "localRegion": "gb"
+  },
+  {
+    "id": "in",
+    "domain": "in.invisalign.local",
+    "locales": [
+      {
+        "id": "en-IN",
+        "slugPrefix": "provider/",
+        "hotjarKey": "",
+        "gtmKey": "GTM-5L77KHT"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "localRegion": "APAC"
+  },
+  {
+    "id": "br",
+    "domain": "br.invisalign.local",
+    "flag": "br",
+    "flagCode": "BR",
+    "locales": [
+      {
+        "id": "pt-BR",
+        "slugPrefix": "doutor/",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-K6J477J",
+        "optimizelyKey": "20784111147",
+        "defaultTrustArcLang": "pt_br",
+        "privacyPolicySlug": "privacidade"
+      }
+    ],
+    "defaultTrustArcCountry": "br",
+    "localRegion": "US"
+  },
+  {
+    "id": "ca",
+    "domain": "ca.invisalign.local",
+    "locales": [
+      {
+        "id": "en-CA",
+        "language": "English",
+        "slugPrefix": "provider/",
+        "defaultTrustArcLang": "en",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "",
+        "gtmKey": "GTM-M8TB4SV",
+        "privacyPolicySlug": "privacy-policy"
+      },
+      {
+        "id": "fr-CA",
+        "language": "Français",
+        "slugPrefix": "fr/provider/",
+        "defaultTrustArcLang": "fr",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "",
+        "gtmKey": "GTM-M8TB4SV",
+        "privacyPolicySlug": "fr/politique-de-confidentialite"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "defaultTrustArcCountry": "ca",
+    "localRegion": "US"
+  },
+  {
+    "id": "eu",
+    "flagCode": "EMEA",
+    "domain": "localhost",
+    "locales": [
+      {
+        "id": "en-EMEA",
+        "language": "English",
+        "slugPrefix": "provider/",
+        "splitSlugPrefix": "",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-WSVX36SR"
+      },
+      {
+        "id": "fr-EU",
+        "language": "Français",
+        "slugPrefix": "provider/fr/",
+        "splitSlugPrefix": "fr/",
+        "gtmKey": "GTM-WSVX36SR"
+      },
+      {
+        "id": "nl-EU",
+        "language": "Dutch",
+        "slugPrefix": "provider/nl/",
+        "splitSlugPrefix": "nl/",
+        "gtmKey": "GTM-WSVX36SR"
+      }
+    ],
+    "localRegion": "EMEA"
+  }
+]

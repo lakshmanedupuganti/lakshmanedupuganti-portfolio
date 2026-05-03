@@ -1,0 +1,44 @@
+@import "/styles/defaultincludes";
+
+.videoPlayer {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+
+  video,
+  iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .youtube {
+    width: 560px;
+    height: 315px;
+    margin: 30px auto;
+  }
+
+  .vimeo {
+    width: 640px;
+    height: 360px;
+    margin: 30px auto;
+  }
+
+  .CMS {
+    width: 100%;
+    height: 360px;
+    margin: auto;
+    @include media-breakpoint-up(lg) {
+      height: 640px;
+    }
+  }
+
+  .other {
+    width: 100%;
+    height: 540px;
+    margin: 30px auto;
+  }
+}

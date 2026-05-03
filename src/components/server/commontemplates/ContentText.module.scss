@@ -1,0 +1,104 @@
+@import "/styles/defaultincludes";
+
+.center {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.justify {
+  text-align: justify !important  ;
+}
+
+.footnoteLink {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+.link {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+  color: $heritage-blue;
+}
+.textTransformInitial {
+  text-transform: initial !important;
+}
+
+.textTransform-none {
+  text-transform: none !important;
+}
+
+.textTransform-capitalize {
+  text-transform: capitalize !important;
+}
+
+.textTransform-uppercase {
+  text-transform: uppercase !important;
+}
+
+.textTransform-lowercase {
+  text-transform: lowercase !important;
+}
+
+.textWrap-wrap {
+  text-wrap: wrap !important;
+  white-space: wrap !important;
+}
+
+.textWrap-nowrap {
+  text-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.unordered-list {
+  margin-top: 1rem;
+  .list-item {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: $primary-charcoal;
+    }
+  }
+}
+
+.ordered-list {
+  margin-top: 1rem;
+  .list-item {
+    margin-bottom: 0.5rem;
+    &::marker {
+      color: $primary-charcoal;
+    }
+  }
+
+  &.lower-alpha {
+    list-style-type: lower-alpha;
+    .list-item {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.footnote-link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.headingSupScript {
+  sup {
+    font-size: 50%;
+    vertical-align: 3px;
+  }
+}
+
+.hr {
+  border: 0;
+  height: 2px;
+  background: #000;
+  margin: 1rem 0;
+}

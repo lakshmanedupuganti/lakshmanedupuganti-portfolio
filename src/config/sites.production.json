@@ -1,0 +1,362 @@
+[
+  {
+    "id": "us",
+    "domain": "www.invisalign.com",
+    "flagCode": "USA",
+    "locales": [
+      {
+        "id": "en-US",
+        "globalSiteGtagKey": "",
+        "slugPrefix": "provider/",
+        "hotjarKey": "2383702",
+        "gtmKey": "GTM-KNVNK92",
+        "optimizelyKey": "15140190703",
+        "privacyPolicySlug": "privacy-policy"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "defaultTrustArcCountry": "N/A",
+    "localRegion": "US"
+  },
+  {
+    "id": "ca",
+    "domain": "www.invisalign.ca",
+    "flagCode": "CA",
+    "locales": [
+      {
+        "id": "en-CA",
+        "language": "English",
+        "slugPrefix": "provider/",
+        "defaultTrustArcLang": "en",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "",
+        "gtmKey": "GTM-M8TB4SV",
+        "privacyPolicySlug": "privacy-policy"
+      },
+      {
+        "id": "fr-CA",
+        "language": "Français",
+        "slugPrefix": "fr/provider/",
+        "defaultTrustArcLang": "fr",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "",
+        "gtmKey": "GTM-M8TB4SV",
+        "privacyPolicySlug": "fr/politique-de-confidentialite"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "defaultTrustArcCountry": "N/A",
+    "localRegion": "US"
+  },
+  {
+    "id": "br",
+    "domain": "www.invisalign.com.br",
+    "flag": "br",
+    "flagCode": "BR",
+    "locales": [
+      {
+        "id": "pt-BR",
+        "slugPrefix": "doutor/",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-K6J477J",
+        "optimizelyKey": "20784111147",
+        "defaultTrustArcLang": "pt_br",
+        "privacyPolicySlug": "privacidade"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "evergageEnabled": true,
+    "defaultTrustArcCountry": "N/A",
+    "localRegion": "US"
+  },
+  {
+    "id": "in",
+    "domain": "www.invisalign.in",
+    "flagCode": "IN",
+    "locales": [
+      {
+        "id": "en-IN",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125895065-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-NRR73RTX"
+      }
+    ],
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "in"
+  },
+  {
+    "id": "sg",
+    "domain": "www.invisalign.com.sg",
+    "flagCode": "SG",
+    "locales": [
+      {
+        "id": "en-SG",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125862785-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-NN4T8GPS"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "sg"
+  },
+  {
+    "id": "jp",
+    "domain": "www.invisalign.co.jp",
+    "flagCode": "JP",
+    "locales": [
+      {
+        "id": "ja-JP",
+        "slugPrefix": "professional/",
+        "gtmKey": "GTM-M3756VB4"
+      }
+    ],
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "jp"
+  },
+  {
+    "id": "th",
+    "domain": "www.invisalign.co.th",
+    "flagCode": "TH",
+    "locales": [
+      {
+        "id": "en-TH",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125857904-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-WQD4Z7NW"
+      }
+    ],
+    "googleKey": "",
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "th"
+  },
+  {
+    "id": "ph",
+    "domain": "www.invisalign.com.ph",
+    "flagCode": "PH",
+    "locales": [
+      {
+        "id": "en-PH",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125866461-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-KFLC9Q8J"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "ph"
+  },
+  {
+    "id": "my",
+    "domain": "www.invisalign.com.my",
+    "flagCode": "MY",
+    "locales": [
+      {
+        "id": "en-MY",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125890940-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-P2D276LC"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "en"
+  },
+  {
+    "id": "vn",
+    "domain": "www.invisalign.com.vn",
+    "flagCode": "VN",
+    "locales": [
+      {
+        "id": "vi-VN",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125862213-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-5MZW27ZM"
+      }
+    ],
+    "googleKey": "",
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "vi"
+  },
+  {
+    "id": "id",
+    "domain": "www.invisalign.co.id",
+    "flagCode": "ID",
+    "locales": [
+      {
+        "id": "en-ID",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125810678-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-MHFV24DL"
+      }
+    ],
+    "googleKey": "",
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au"
+  },
+  {
+    "id": "hk",
+    "domain": "www.invisalign.com.hk",
+    "flagCode": "HK",
+    "locales": [
+      {
+        "id": "en-HK",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125801379-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-PSQXKR3K"
+      },
+      {
+        "id": "en-HK",
+        "slugPrefix": "en/provider/",
+        "globalSiteGtagKey": "UA-125801379-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-PSQXKR3K"
+      }
+    ],
+    "googleKey": "",
+    "facebookKey": "",
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "en"
+  },
+  {
+    "id": "tw",
+    "domain": "www.invisalign-doctor.com.tw",
+    "flagCode": "TW",
+    "locales": [
+      {
+        "id": "zh-Hant-TW",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125869512-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-N42V762V"
+      }
+    ],
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "zh-tw"
+  },
+  {
+    "id": "tw-invisalign",
+    "domain": "www.invisalign.com.tw",
+    "flagCode": "TW",
+    "locales": [
+      {
+        "id": "zh-Hant-TW",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125869512-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-N42V762V"
+      }
+    ],
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "zh-tw"
+  },
+  {
+    "id": "au",
+    "domain": "www.invisalign.com.au",
+    "flagCode": "AU",
+    "locales": [
+      {
+        "id": "en-AU",
+        "slugPrefix": "provider/",
+        "globalSiteGtagKey": "UA-125810261-1",
+        "hotjarKey": "",
+        "gtmKey": "GTM-MRRPQN7N"
+      }
+    ],
+    "evergageEnabled": true,
+    "localRegion": "APAC",
+    "defaultTrustArcCountry": "au",
+    "defaultTrustArcLang": "en"
+  },
+  {
+    "id": "emea",
+    "domain": "www.invisalign.eu",
+    "flag": "eu",
+    "flagCode": "EU",
+    "locales": [
+      {
+        "id": "en-EMEA",
+        "language": "English",
+        "slugPrefix": "provider/",
+        "splitSlugPrefix": "",
+        "globalSiteGtagKey": "",
+        "gtmKey": "GTM-WSVX36SR"
+      },
+      {
+        "id": "fr-EU",
+        "language": "Français",
+        "slugPrefix": "provider/fr/",
+        "splitSlugPrefix": "fr/",
+        "gtmKey": "GTM-WSVX36SR"
+      },
+      {
+        "id": "nl-EU",
+        "language": "Dutch",
+        "slugPrefix": "provider/nl/",
+        "splitSlugPrefix": "nl/",
+        "gtmKey": "GTM-WSVX36SR"
+      }
+    ],
+    "localRegion": "EMEA"
+  },
+  {
+    "id": "gb",
+    "domain": "www.invisalign.co.uk",
+    "flagCode": "UK",
+    "locales": [
+      {
+        "id": "en-GB",
+        "slugPrefix": "provider/",
+        "splitSlugPrefix": "",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "3553572",
+        "gtmKey": "GTM-WSVX36SR",
+        "optimizelyKey": "22536111630"
+      }
+    ],
+    "localRegion": "EMEA"
+  },
+  {
+    "id": "de",
+    "domain": "www.invisalign.de",
+    "flagCode": "DE",
+    "locales": [
+      {
+        "id": "de-DE",
+        "slugPrefix": "provider/",
+        "splitSlugPrefix": "",
+        "globalSiteGtagKey": "",
+        "hotjarKey": "3553573",
+        "gtmKey": "GTM-WSVX36SR",
+        "optimizelyKey": "22551001699"
+      }
+    ],
+    "localRegion": "EMEA"
+  }
+]

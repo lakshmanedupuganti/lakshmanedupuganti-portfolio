@@ -1,0 +1,25 @@
+
+@import '/styles/defaultincludes';
+
+.styling {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+  align-items: center;
+  gap: 0.78rem;
+  > div {
+    padding: 5px;
+  }
+  @include media-breakpoint-up(lg) {
+    &.center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      br {
+        flex-basis: 100%;
+        content: '';
+      }
+    }
+  }
+}
