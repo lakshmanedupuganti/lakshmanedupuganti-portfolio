@@ -1,4 +1,4 @@
-import type { ContentEntry } from "@aligntech-cw/contentful-server-lib2";
+import type { ContentEntry } from "@lakshmanedupuganti/server-library";
 import type {
   NavigationEntry,
   SiteConfigEx,
@@ -14,7 +14,7 @@ class Utility {
   public getPageSlugWithSitePrefix(
     slug: string,
     site: SiteConfigEx,
-    localeId: string
+    localeId: string,
   ): string {
     const currentLocale = this.getCurrentLocale(site, localeId);
     return slug === "/"
@@ -27,7 +27,7 @@ class Utility {
   public getWebPageUrl(
     slug: string,
     site: SiteConfigEx,
-    localeId: string
+    localeId: string,
   ): string {
     const metaTagURL = this.getPageSlugWithSitePrefix(slug, site, localeId);
 
@@ -55,7 +55,7 @@ class Utility {
   public getSiteNavigationElementParts(
     navNodes: NavigationEntry[],
     site: SiteConfigEx,
-    localeId: string
+    localeId: string,
   ): SiteNavigationElementPart[] {
     const navElements: SiteNavigationElementPart[] = [];
 
@@ -82,7 +82,7 @@ class Utility {
       const childNavElements = this.getSiteNavigationElementParts(
         childNodes,
         site,
-        localeId
+        localeId,
       );
 
       navElements.push(...childNavElements);

@@ -1,7 +1,7 @@
 import {
   AssetEntry,
   ServerContentItemComponentProps,
-} from "@aligntech-cw/contentful-server-lib2";
+} from "@lakshmanedupuganti/server-library";
 import {
   AnchorLinksAccordianSchema,
   FAQPageSchema,
@@ -16,7 +16,7 @@ import {
   WebPageSchema,
 } from "@src/lib/types";
 import util from "@server/layout/SEOComponent/util";
-import { renderOnlyText } from "@server/contenttemplates/commontemplates/ContentText";
+import { renderOnlyText } from "@server/commontemplates/ContentText";
 
 const socialMediaContacts: Record<string, string> = {
   facebookUrl: "https://www.facebook.com/invisalign",
@@ -29,7 +29,7 @@ const socialMediaContacts: Record<string, string> = {
 
 class StructuredData {
   private renderHeaderFooterNavSchema(
-    pageProps: ServerContentItemComponentProps<SEOMetadataFields>
+    pageProps: ServerContentItemComponentProps<SEOMetadataFields>,
   ) {
     const { pageResult } = pageProps;
     if (!pageResult) return null;
@@ -47,12 +47,12 @@ class StructuredData {
     const topNavElements = util.getSiteNavigationElementParts(
       [...navgationNodes, ...header?.fields?.buttons],
       site,
-      localeId
+      localeId,
     );
     const bottomNavNodes = util.getSiteNavigationElementParts(
       [...bottomNavgationNodes, ...footer?.fields?.buttons],
       site,
-      localeId
+      localeId,
     );
 
     const webPageUrl: string = util.getWebPageUrl(slug, site, localeId);
@@ -120,7 +120,7 @@ class StructuredData {
   }
 
   private rendarAnchorLinksAccordianSchema(
-    pageProps: ServerContentItemComponentProps<SEOMetadataFields>
+    pageProps: ServerContentItemComponentProps<SEOMetadataFields>,
   ) {
     const { pageResult } = pageProps;
     if (!pageResult) return null;
@@ -153,7 +153,7 @@ class StructuredData {
           name: renderOnlyText(headline) || "",
           description: renderOnlyText(bodyContent) || "",
         };
-      }
+      },
     );
 
     const anchorLinksAccordianSchema: AnchorLinksAccordianSchema = {
@@ -174,7 +174,7 @@ class StructuredData {
   }
 
   private renderFAQSchema(
-    pageProps: ServerContentItemComponentProps<SEOMetadataFields>
+    pageProps: ServerContentItemComponentProps<SEOMetadataFields>,
   ) {
     const { pageResult } = pageProps;
     if (!pageResult) return null;
@@ -222,7 +222,7 @@ class StructuredData {
 
     const logoUrl = util.getImageUrl(
       header?.fields?.desktopLogo?.fields?.file?.url ||
-        header?.fields?.mobileLogo?.fields?.file?.url
+        header?.fields?.mobileLogo?.fields?.file?.url,
     );
 
     if (contactPoint) {
@@ -263,7 +263,7 @@ class StructuredData {
   }
 
   public renderSchemaMarkup(
-    pageProps: ServerContentItemComponentProps<SEOMetadataFields>
+    pageProps: ServerContentItemComponentProps<SEOMetadataFields>,
   ) {
     const { pageResult } = pageProps;
     if (!pageResult) return null;
@@ -289,12 +289,12 @@ class StructuredData {
 
     const previewImage = util.getFirstContentImage(contents);
     const openGraphImageUrl = util.getImageUrl(
-      openGraphImage?.fields?.file?.url || previewImage
+      openGraphImage?.fields?.file?.url || previewImage,
     );
     const logoUrl = util.getImageUrl(
       desktopLogo?.fields?.file?.url ||
         mobileLogo?.fields?.file?.url ||
-        openGraphImageUrl
+        openGraphImageUrl,
     );
     const webPageUrl: string = util.getWebPageUrl(slug, site, localeId);
 

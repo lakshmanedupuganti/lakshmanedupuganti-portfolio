@@ -1,27 +1,7 @@
 [
   {
-    "id": "gb",
-    "flag": "gb",
-    "flagCode": "UK",
-    "domain": "localhost",
-    "split": [
-      "ortho",
-      "gp"
-    ],
-    "locales": [
-      {
-        "id": "de-DE",
-        "slugPrefix": "provider/",
-        "globalSiteGtagKey": "",
-        "gtmKey": "GTM-WSVX36SR",
-        "optimizelyKey": "22536111630"
-      }
-    ],
-    "localRegion": "gb"
-  },
-  {
     "id": "us",
-    "domain": "us.localhost.com",
+    "domain": "localhost",
     "flagCode": "USA",
     "locales": [
       {

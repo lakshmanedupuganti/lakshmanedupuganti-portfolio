@@ -8,12 +8,12 @@ import ClientComponentBridge, {
 import type {
   ContentEntry,
   ServerContentItemComponentProps,
-} from "@aligntech-cw/contentful-server-lib2";
+} from "@lakshmanedupuganti/server-library";
 
 export const emptyItem: ContentEntry = { id: "", contentType: "", fields: {} };
 
 const ClientHandlerRoot: React.FC<ServerContentItemComponentProps> = (
-  props
+  props,
 ) => {
   return (
     <>

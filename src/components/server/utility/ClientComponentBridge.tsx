@@ -3,7 +3,7 @@ import "server-only";
 import type {
   ServerContentItemComponentProps,
   ContentEntry,
-} from "@aligntech-cw/contentful-server-lib2";
+} from "@lakshmanedupuganti/server-library";
 import ClientComponentLoader, {
   ClientTemplateLoaderProps,
 } from "@src/components/client/utility/ClientComponentLoader";
@@ -29,14 +29,14 @@ export const environmentConfig: NamedEnvMap = {
   RECAPTCHA_ACTIVE: process.env.RECAPTCHA_ACTIVE || "false",
   GENERAL_ENABLE_TRUSTARC: process.env.GENERAL_ENABLE_TRUSTARC || "false",
   TRUSTARC_BEHAVIOR: process.env.TRUSTARC_BEHAVIOR || "implied",
-  TRUSTARC_PERAMETERS: process.env.TRUSTARC_PERAMETERS || '',
+  TRUSTARC_PERAMETERS: process.env.TRUSTARC_PERAMETERS || "",
   RELOAD_ON_TRUSTARC_ACTION: process.env.RELOAD_ON_TRUSTARC_ACTION || "false",
-  CLIENT_API_PREFIX: process.env.CLIENT_API_PREFIX || '',
+  CLIENT_API_PREFIX: process.env.CLIENT_API_PREFIX || "",
   USE_DEVELOPMENT_PANEL: process.env.APP_ENV !== "production",
 };
 
 const ClientComponentBridge: React.FC<ClientComponentBridgeProps> = (
-  props: ClientComponentBridgeProps
+  props: ClientComponentBridgeProps,
 ) => {
   const {
     item,
@@ -53,7 +53,7 @@ const ClientComponentBridge: React.FC<ClientComponentBridgeProps> = (
       ? { items: [{ ...item, fields: {} }], includes: { Asset: [], Entry: [] } }
       : helpers.getResultForEntry(
           item.id,
-          itemExpandLogic === "itemanddescendants"
+          itemExpandLogic === "itemanddescendants",
         );
   if (clientResult.items.length === 0) return null;
 

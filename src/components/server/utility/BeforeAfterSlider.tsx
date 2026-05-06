@@ -3,7 +3,7 @@ import css from "./BeforeAfterSlider.module.scss";
 import ResponsiveImage from "@client/utility/ResponsiveImage";
 import { csx } from "@src/lib/utility/stylings/classes";
 import { SliderArrowLeft, SliderArrowRight } from "@server/utility/IconSVGFile";
-import type { AssetEntry } from "@aligntech-cw/contentful-server-lib2";
+import type { AssetEntry } from "@lakshmanedupuganti/server-library";
 
 interface BeforeAfterSliderProps {
   images: AssetEntry[];
@@ -16,7 +16,7 @@ const BeforeAfterSlider = ({
   images,
   sliderProperties,
   clientId,
-  firstDescendant
+  firstDescendant,
 }: BeforeAfterSliderProps) => {
   if (!images || images.length < 2) {
     return null;

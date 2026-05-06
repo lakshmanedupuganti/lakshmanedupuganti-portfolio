@@ -1,0 +1,67 @@
+$primary-blue: #009ace;
+$primary-charcoal: #3d3935;
+$primary-white: #ffffff;
+$heritage-blue: #0067ac;
+$light-blue: #e6f5fa;
+$deep-grey: #211f1d;
+$dark-grey: #3d3834;
+$medium-grey: #efefef;
+$light-grey: #f6f6f6;
+$very-light-grey: #fbfbfb;
+$grey: #e0e0e0;
+
+$colors: ();
+$colors: map-merge(
+  (
+    'blue': $primary-blue,
+    'charcoal': $primary-charcoal,
+    'light-grey': $light-grey,
+    'grey': $grey,
+  ),
+  $colors
+);
+$gradients-reflected-blue: linear-gradient(
+  180deg,
+  #009bce 0%,
+  #b3e1f0 30.55%,
+  #0067ac 100%
+);
+$gradients-soft-blue: linear-gradient(90deg, #0b9ebf 0%, #3ca4ea 100%);
+$gradients-dark-blue: linear-gradient(90deg, #0067ac 0%, #009ace 100%);
+$gradients-purple-to-blue: linear-gradient(
+  253.7deg,
+  #8e47a8 0%,
+  #503181 62.91%,
+  #0067ac 92.32%,
+  #06bdfc 106.2%
+);
+$gradients-blue-to-purple: linear-gradient(
+  253.7deg,
+  #06bdfc 0%,
+  #0067ac 62.91%,
+  #503181 92.32%,
+  #8e47a8 106.2%
+);
+$gradient-cyan-to-purple: linear-gradient(90deg, #009ACE 0%, #49165D 100%);;
+
+$error: #d13719;
+$green: #15c100;
+$grey: #e0e0e0;
+$magenta: #e10098;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 800px,
+  lg: 1024px,
+  xl: 1440px,
+) !default;
+
+$container-max-widths: (
+  xs: 800px,
+  sm: 1024px,
+  lg: 1440px,
+  xl: 2000px,
+) !default;
+
+$modal-backdrop-opacity: 0.7;
+$navbar-height: 90px;

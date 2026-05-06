@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -20,6 +21,7 @@
     ],
     "baseUrl": "./",
     "paths": {
+      "@prisma/*": ["prisma/*"],
       "@src/*": ["src/*"],
       "@comp/*": ["src/components/*"],
       "@server/*": ["src/components/server/*"],
@@ -38,8 +40,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "src/__tests__/**/*.tsx",
   ],
   "exclude": ["node_modules"]
 }

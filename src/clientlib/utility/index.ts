@@ -11,7 +11,7 @@ import {
   csx,
 } from "@src/lib/utility/stylings/classes";
 import { ButtonFields } from "@src/lib/types";
-import type { NextPageResult } from "@aligntech-cw/contentful-server-lib2";
+import type { NextPageResult } from "@lakshmanedupuganti/server-library";
 
 class Utility {
   public generateRandom(pattern: string): string {
@@ -55,7 +55,7 @@ class Utility {
 
   public removeClassFromElements(
     elements: NodeListOf<Element>,
-    className: string
+    className: string,
   ) {
     Array.from(elements).forEach((element) => {
       element.classList.remove(className);
@@ -106,7 +106,7 @@ class Utility {
 
   public getButtonProps(
     fields: ButtonFields,
-    css: { readonly [key: string]: string } = {}
+    css: { readonly [key: string]: string } = {},
   ) {
     const {
       variant = "primary",
