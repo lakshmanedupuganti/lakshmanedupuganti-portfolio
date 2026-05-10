@@ -1,0 +1,186 @@
+@import "/styles/defaultincludes";
+@import "/styles/globalclasses";
+
+.dropdownArrow {
+  &.errors {
+    --errorsRight: 25;
+  }
+
+  &.tooltip {
+    --tooltipRight: 25;
+  }
+
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: calc((var(--errorsRight, 0) + var(--tooltipRight, 0)) * 1px);
+  width: 25px;
+  height: 30px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.inputContainer {
+  --textColor: #{$primary-charcoal};
+  --borderColor: #a4a4a4;
+  --activeBorderColor: #{$heritage-blue};
+  --labelDisplay: initial;
+  --danger: #dc3545;
+
+  &.error {
+    input:not([type="checkbox"]):not([type="radio"]),
+    textarea {
+      border: 2px solid $danger !important;
+      & + .inputLabel {
+        color: $danger !important;
+      }
+    }
+
+    .checkboxLabel {
+      svg {
+        color: $danger;
+        fill: $danger;
+        circle {
+          stroke: $danger;
+        }
+      }
+      span {
+        color: $danger !important;
+      }
+    }
+
+    .inputLabel {
+      color: $danger !important;
+    }
+  }
+
+  &.onDarkBg {
+    --textColor: white;
+    --borderColor: rgba(255, 255, 255, 0.7);
+    --activeBorderColor: white;
+  }
+
+  &.hideLabelOnFocus {
+    --labelDisplay: none;
+  }
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  input:not([type="checkbox"]):not([type="radio"]),
+  textarea {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 15px;
+    outline: none;
+    min-height: 50px;
+    line-height: 50px;
+    border: none;
+    border: 2px solid $light-grey;
+    border-radius: 8px;
+    transition: 0.2s ease all;
+    background: transparent;
+    color: var(--textColor);
+    &:active,
+    &:focus {
+      border: 2px solid var(--activeBorderColor);
+    }
+    input[type="radio"] {
+      width: 15px;
+      margin: 0 10px;
+    }
+
+    &:active,
+    &:focus {
+      & + .inputLabel {
+        color: var(--activeBorderColor);
+      }
+      .inputLabel {
+        color: var(--activeBorderColor);
+      }
+    }
+
+    &:active,
+    &:focus,
+    &:not([data-value=""]) {
+      & + .inputLabel {
+        font-size: 0.7em;
+        top: -22px;
+        display: var(--labelDisplay);
+      }
+      .inputLabel {
+        color: var(--activeBorderColor);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: 15px 0 22px;
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    line-height: 1.4;
+    resize: vertical;
+    padding: 15px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 0;
+    height: 0;
+  }
+
+  .checkboxLabel {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    div {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    svg {
+      margin: 1rem 0;
+    }
+    span {
+      margin-left: 10px;
+      margin-right: 20px;
+      color: #727272;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    }
+  }
+
+  .inputLabel {
+    @extend .eyeBrow;
+    color: $primary-charcoal;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+
+  .dropdownArrow {
+    color: var(--borderColor);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

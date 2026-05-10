@@ -10,8 +10,8 @@ import VideoPlayer from "@src/components/client/utility/VideoPlayer";
 
 const ModalCloseIcon = dynamic(() =>
   import("@src/components/server/utility/IconSVGFile").then(
-    (mod) => mod.ModalCloseIcon
-  )
+    (mod) => mod.ModalCloseIcon,
+  ),
 );
 
 interface GlobalClickHandlerProps {}
@@ -48,7 +48,7 @@ const GlobalClickHandler: React.FC<GlobalClickHandlerProps> = () => {
 
   const ModalComp = useDynamicComponent(
     showModal,
-    async () => (await import("@client/utility/dynamic/Modal")).default
+    async () => (await import("@client/utility/dynamic/Modal")).default,
   );
 
   const clickHandler = useCallback((event: MouseEvent) => {
@@ -65,11 +65,24 @@ const GlobalClickHandler: React.FC<GlobalClickHandlerProps> = () => {
           domUtil.handleHeaderBannerCloseClick(el);
         }
       },
-      "data-topnav-menu-toggle": () => domUtil.handleTopNavToggleClick(el),
-      "data-topnav-dropdown": () => domUtil.handleTopNavDropdownClick(el),
+      "data-topnav-menu-toggle": () => {
+        if (el?.getAttribute("data-topnav-menu-toggle") === "true") {
+          domUtil.handleTopNavToggleClick(el);
+        }
+      },
+      "data-topnav-dropdown": () => {
+        if (el?.getAttribute("data-topnav-dropdown") === "true") {
+          domUtil.handleTopNavDropdownClick(el);
+        }
+      },
       "data-topnav-mega-menu": () => domUtil.handleTopNavMegaMenuClick(el),
       "data-nav-item": () => {
         domUtil.closeAllNavDropdowns();
+      },
+      "data-nav-anchor-item": (targetEl?: HTMLElement) => {
+        if (targetEl) {
+          domUtil.handleAnchorLinkClick(targetEl);
+        }
       },
       "data-toggle": () => {
         if (el?.getAttribute("data-toggle") === "modal") {

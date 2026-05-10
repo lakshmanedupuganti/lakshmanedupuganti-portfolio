@@ -14,7 +14,12 @@
     }
   }
 }
-
+.footer-logo {
+  img {
+    width: auto;
+    height: 200px;
+  }
+}
 .desktopLogo {
   display: none;
   @include media-breakpoint-up(lg) {

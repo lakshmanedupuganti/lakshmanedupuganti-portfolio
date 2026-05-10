@@ -1,53 +1,92 @@
-$primary-blue: #009ace;
-$primary-charcoal: #3d3935;
+$primary-fire-red: #e63312;
+$primary-flame-orange: #f95a00;
+$primary-golden-orange: #ff8c00;
+$primary-sun-yellow: #ffe600;
+
+$primary-charcoal: #222222;
 $primary-white: #ffffff;
-$heritage-blue: #0067ac;
-$light-blue: #e6f5fa;
-$deep-grey: #211f1d;
-$dark-grey: #3d3834;
+
+$sunset-orange: #ff6a00;
+$warm-gold: #ffc300;
+
+$light-orange: #fff4eb;
+$light-yellow: #fff9d6;
+
+$deep-grey: #1f1f1f;
+$dark-grey: #333333;
 $medium-grey: #efefef;
-$light-grey: #f6f6f6;
+$light-grey: #f7f7f7;
 $very-light-grey: #fbfbfb;
 $grey: #e0e0e0;
-
 $colors: ();
 $colors: map-merge(
   (
-    'blue': $primary-blue,
+    'fire-red': $primary-fire-red,
+    'flame-orange': $primary-flame-orange,
+    'golden-orange': $primary-golden-orange,
+    'sun-yellow': $primary-sun-yellow,
     'charcoal': $primary-charcoal,
     'light-grey': $light-grey,
     'grey': $grey,
   ),
   $colors
 );
-$gradients-reflected-blue: linear-gradient(
+
+$gradient-fire-horse: linear-gradient(
+  90deg,
+  #e63312 0%,
+  #f95a00 55%,
+  #ff8c00 100%
+);
+
+$gradient-sun: linear-gradient(
   180deg,
-  #009bce 0%,
-  #b3e1f0 30.55%,
-  #0067ac 100%
+  #ff6a00 0%,
+  #ffc300 60%,
+  #ffe600 100%
 );
-$gradients-soft-blue: linear-gradient(90deg, #0b9ebf 0%, #3ca4ea 100%);
-$gradients-dark-blue: linear-gradient(90deg, #0067ac 0%, #009ace 100%);
-$gradients-purple-to-blue: linear-gradient(
-  253.7deg,
-  #8e47a8 0%,
-  #503181 62.91%,
-  #0067ac 92.32%,
-  #06bdfc 106.2%
+
+$gradient-fire-text: linear-gradient(
+  90deg,
+  #d62818 0%,
+  #f28c28 100%
 );
-$gradients-blue-to-purple: linear-gradient(
-  253.7deg,
-  #06bdfc 0%,
-  #0067ac 62.91%,
-  #503181 92.32%,
-  #8e47a8 106.2%
+
+$gradient-fire-glow: linear-gradient(
+  135deg,
+  #ff6a00 0%,
+  #f95a00 45%,
+  #e63312 100%
 );
-$gradient-cyan-to-purple: linear-gradient(90deg, #009ACE 0%, #49165D 100%);;
+
+$gradient-warm-light: linear-gradient(
+  180deg,
+  #fff9d6 0%,
+  #fff4eb 100%
+);
 
 $error: #d13719;
-$green: #15c100;
-$grey: #e0e0e0;
-$magenta: #e10098;
+$success: #15c100;
+$warning: #ffb800;
+
+.fire-text-gradient {
+  background: $gradient-fire-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fire-bg-gradient {
+  background: $gradient-fire-horse;
+}
+
+.sun-bg-gradient {
+  background: $gradient-sun;
+}
+
+.fire-glow {
+  box-shadow: 0 0 30px rgba(249, 90, 0, 0.35);
+}
 
 $grid-breakpoints: (
   xs: 0,
@@ -64,4 +103,4 @@ $container-max-widths: (
 ) !default;
 
 $modal-backdrop-opacity: 0.7;
-$navbar-height: 90px;
+$navbar-height: 100px;

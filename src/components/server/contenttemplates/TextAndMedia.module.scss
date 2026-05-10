@@ -1,0 +1,238 @@
+@import "/styles/defaultincludes";
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 15px;
+  margin: 0;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    width: var(--width, 100%);
+    margin: 30px auto;
+    &.sliderWrapper {
+      padding: 30px 46px;
+    }
+  }
+}
+
+.mainSection {
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column-reverse;
+  }
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include media-breakpoint-down(lg) {
+    text-align: left;
+  }
+  &.isCarousel {
+    @include media-breakpoint-down(lg) {
+      gap: 5rem;
+    }
+  }
+}
+
+.textContainer {
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 100%;
+  }
+
+  .textContainerInner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 30px 0 30px;
+      text-align: left;
+    }
+  }
+}
+
+.assetContainerInner {
+  position: relative;
+  width: var(--width, 100%);
+  padding: 0px;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    padding: 0.8rem;
+  }
+
+  .imageContainer {
+    border-radius: 5px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.assetContainer {
+  width: 100%;
+  margin: 0 auto;
+  .assetContainerInner {
+    border-radius: unset;
+    padding: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 70%;
+    .assetContainerInner {
+      padding: 0;
+      border-bottom: 0.4rem solid var(--borderColor-deepkGrey, #211f1d);
+    }
+  }
+}
+
+.languages {
+  display: flex;
+
+  gap: 0.85rem;
+  margin: 1.5rem auto;
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* Hide scrollbar */
+  scrollbar-width: none; // Firefox
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-wrap: wrap;
+  }
+}
+
+.languageCard {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+  padding: 0.7rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  border: 1px solid rgba(255, 140, 0, 0.12);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(255, 140, 0, 0.06);
+
+  backdrop-filter: blur(12px);
+
+  flex-shrink: 0;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  cursor: default;
+
+  @include media-breakpoint-up(lg) {
+    gap: 0.75rem;
+
+    padding: 0.7rem 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(255, 140, 0, 0.35);
+
+    box-shadow:
+      0 14px 32px rgba(0, 0, 0, 0.08),
+      0 4px 10px rgba(255, 140, 0, 0.12);
+  }
+}
+
+.languageName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--fontColor-charcoal);
+  letter-spacing: 0.01em;
+}
+
+.separator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a00, #ffae42);
+  flex-shrink: 0;
+}
+
+.proficiencyLevel {
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  color: rgba(33, 37, 41, 0.72);
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fullVideoWrapper {
+  .assetContainer {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+}
+
+.fullWidthImage {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 30px auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+// new swiper styling
+
+// root class that will keep hidden all slides except the first one and possibly other "swiper" elements before the client side can install the swiper
+// keep the class name as it is, as client side JS in HeroAreaSwiper component will remove it before it instantiates the "swiper" widget
+.swiperRoot {
+  :global(.swiper-slide):not(:first-child) {
+    display: none;
+  }
+}

@@ -107,8 +107,8 @@ export function CaretArrowDownIcon(props: IconSVGFileProps) {
   const {
     width = 30,
     height = 30,
-    background = "#E6F5FA",
-    color = "#3D3935",
+    background = "#FFF4E8",
+    color = "#2B2B2B",
     className,
   } = props;
   return `<svg
@@ -185,10 +185,10 @@ export function CaretArrowRightIcon(props: IconSVGFileProps) {
       viewBox="0 0 175 36"
       fill="none"
     >
-      <circle cx="15" cy="18" r="15" fill="#E6F5FA" />
+      <circle cx="15" cy="18" r="15" fill="#FFF4E8" />
       <path
         d="M10.1055 17.3086C10.0352 17.4141 10 17.5195 10 17.625C10 17.7656 10.0352 17.8359 10.1055 17.9063L15.2734 23.1445C15.3789 23.2148 15.4844 23.25 15.5898 23.25C15.6953 23.25 15.8008 23.2148 15.8711 23.1094L16.5742 22.4414C16.6445 22.3711 16.6797 22.2656 16.6797 22.125C16.6797 22.0195 16.6445 21.9141 16.5742 21.8438L12.3906 17.625L16.5742 13.4063C16.6445 13.3359 16.6797 13.2656 16.6797 13.125C16.6797 13.0195 16.6445 12.9141 16.5742 12.8086L15.8711 12.1055C15.8008 12.0352 15.6953 12 15.5898 12C15.4844 12 15.3789 12.0352 15.2734 12.1055L10.1055 17.3086Z"
-        fill="#3D3935"
+        fill="#2B2B2B"
       />
       <circle
         cx="15"
@@ -206,8 +206,8 @@ export function CaretArrowRightIcon(props: IconSVGFileProps) {
           y2="18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0B9EBF" />
-          <stop offset="1" stopColor="#3CA4EA" />
+          <stop stopColor="#FF7A00" />
+          <stop offset="1" stopColor="#FFB347" />
         </linearGradient>
       </defs>
     </svg>
@@ -234,12 +234,12 @@ export function CarouselPrevIcon(props: IconSVGFileProps) {
         cx="18"
         cy="18"
         r="15"
-        fill="#E6F5FA"
+        fill="#FFF4E8"
         className={"carousel-prev-icon"}
       />
       <path
         d="M13.426 18.0586C13.355 18.1641 13.32 18.2695 13.32 18.375C13.32 18.5156 13.355 18.5859 13.426 18.6562L18.594 23.8945C18.699 23.9648 18.805 24 18.91 24C19.016 24 19.121 23.9648 19.191 23.8594L19.895 23.1914C19.965 23.1211 20 23.0156 20 22.875C20 22.7695 19.965 22.6641 19.895 22.5938L15.711 18.375L19.895 14.1562C19.965 14.0859 20 14.0156 20 13.875C20 13.7695 19.965 13.6641 19.895 13.5586L19.191 12.8555C19.121 12.7852 19.016 12.75 18.91 12.75C18.805 12.75 18.699 12.7852 18.594 12.8555L13.426 18.0586Z"
-        fill="#3D3935"
+        fill="#2B2B2B"
       />
       <circle
         cx="18"
@@ -258,8 +258,8 @@ export function CarouselPrevIcon(props: IconSVGFileProps) {
           y2="18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0B9EBF" />
-          <stop offset="1" stopColor="#3CA4EA" />
+          <stop stopColor="#FF7A00" />
+          <stop offset="1" stopColor="#FFB347" />
         </linearGradient>
       </defs>
     </svg>
@@ -286,12 +286,12 @@ export function CarouselNextIcon(props: IconSVGFileProps) {
         cx="20"
         cy="20"
         r="15"
-        fill="#E6F5FA"
+        fill="#FFF4E8"
         className="carousel-next-icon"
       />
       <path
         d="M24.574 19.9414C24.645 19.8359 24.68 19.7305 24.68 19.625C24.68 19.4844 24.645 19.4141 24.574 19.3437L19.406 14.1055C19.301 14.0352 19.195 14 19.09 14C18.984 14 18.879 14.0352 18.809 14.1406L18.105 14.8086C18.035 14.8789 18 14.9844 18 15.125C18 15.2305 18.035 15.3359 18.105 15.4062L22.289 19.625L18.105 23.8437C18.035 23.9141 18 23.9844 18 24.125C18 24.2305 18.035 24.3359 18.105 24.4414L18.809 25.1445C18.879 25.2148 18.984 25.25 19.09 25.25C19.195 25.25 19.301 25.2148 19.406 25.1445L24.574 19.9414Z"
-        fill="#3D3935"
+        fill="#2B2B2B"
       />
       <circle
         cx="20"
@@ -310,8 +310,8 @@ export function CarouselNextIcon(props: IconSVGFileProps) {
           y2="20"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0B9EBF" />
-          <stop offset="1" stopColor="#3CA4EA" />
+          <stop stopColor="#FF7A00" />
+          <stop offset="1" stopColor="#FFB347" />
         </linearGradient>
       </defs>
     </svg>
@@ -421,14 +421,14 @@ export function PlayButton(props: IconSVGFileProps) {
         cx="48.5"
         cy="48.5"
         r="45.5"
-        fill="#E6F5FA"
-        stroke="#0B9EBF"
+        fill="#FFF4E8"
+        stroke="#FF7A00"
         strokeWidth="6"
         {...props}
       />
       <path
         d="M61.4604 48.334C61.6597 48.0352 61.7593 47.7363 61.7593 47.4375C61.7593 47.0391 61.6597 46.8398 61.4604 46.6406L46.8179 31.7988C46.519 31.5996 46.2202 31.5 45.9214 31.5C45.6226 31.5 45.3237 31.5996 45.1245 31.8984L43.1323 33.791C42.9331 33.9902 42.8335 34.2891 42.8335 34.6875C42.8335 34.9863 42.9331 35.2852 43.1323 35.4844L54.9858 47.4375L43.1323 59.3906C42.9331 59.5898 42.8335 59.7891 42.8335 60.1875C42.8335 60.4863 42.9331 60.7852 43.1323 61.084L45.1245 63.0762C45.3237 63.2754 45.6226 63.375 45.9214 63.375C46.2202 63.375 46.519 63.2754 46.8179 63.0762L61.4604 48.334Z"
-        fill="#3D3935"
+        fill="#2B2B2B"
         {...props}
       />
       <defs {...props}>
@@ -440,8 +440,8 @@ export function PlayButton(props: IconSVGFileProps) {
           y2="48.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0B9EBF" />
-          <stop offset="1" stopColor="#3CA4EA" />
+          <stop stopColor="#FF7A00" />
+          <stop offset="1" stopColor="#FFB347" />
         </linearGradient>
       </defs>
     </svg>
@@ -614,7 +614,7 @@ export function CircleCheckBoxIcon(props: IconSVGFileProps) {
     height = 30,
     color = "#fff",
     className,
-    background = "#3D3935",
+    background = "#2B2B2B",
   } = props;
   return (
     <svg
@@ -776,7 +776,7 @@ export function CheckBoxDone(props: IconSVGFileProps) {
     width = 30,
     height = 30,
     color = "#fff",
-    background = "#3D3935",
+    background = "#2B2B2B",
   } = props;
   return (
     <svg
@@ -884,7 +884,7 @@ export function FilterIcon() {
         <g mask="url(#mask0_4067_1732)">
           <path
             d="M8.25 15.75V11.25H9.75V12.75H15.75V14.25H9.75V15.75H8.25ZM2.25 14.25V12.75H6.75V14.25H2.25ZM5.25 11.25V9.75H2.25V8.25H5.25V6.75H6.75V11.25H5.25ZM8.25 9.75V8.25H15.75V9.75H8.25ZM11.25 6.75V2.25H12.75V3.75H15.75V5.25H12.75V6.75H11.25ZM2.25 5.25V3.75H9.75V5.25H2.25Z"
-            fill="#3D3935"
+            fill="#2B2B2B"
           />
         </g>
       </g>

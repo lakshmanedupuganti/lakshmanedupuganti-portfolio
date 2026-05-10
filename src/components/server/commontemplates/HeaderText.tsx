@@ -70,16 +70,29 @@ const HeaderText = (props: HeaderTextProps) => {
         const headingTag = HEADING_TAGS[selectHeading + count];
         count++;
 
-        if (headingType === "eyebrow" && startH !== 0) {
-          count--;
-        }
-
         const headingClass = getHeadingClass(
           headingType as keyof TextContent,
           count,
           headingClassNumer,
           useHeroTitles,
         );
+
+        if (headingType === "eyebrow" && startH === 0) {
+          count--;
+          return (
+            <ContentText
+              key={i}
+              bodyContent={heading}
+              className={headingClass}
+              tagName="span"
+              headingStrong={useHeroTitles}
+              fnNumbers={fnNumbers}
+              dataAttributes={dataAttributes}
+            />
+          );
+        } else if (headingType === "eyebrow" && startH !== 0) {
+          count--;
+        }
 
         return (
           <ContentText

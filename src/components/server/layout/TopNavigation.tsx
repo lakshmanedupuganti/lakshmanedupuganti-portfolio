@@ -35,6 +35,7 @@ const TopNavigation = (props: TopNavigationProps) => {
     footerNavigation?.fields || footer?.fields || {};
   const { flagCode, locales } = (site as SiteConfigEx) || {};
   const navgationNodes = topNavigationRoot?.fields.childNodes || [];
+  console.log("item.fields", item.fields);
   const bottomNavgationNodes = bottomNavigationRoot?.fields.childNodes || [];
 
   const currentLocale = site.locales.find((l) => l.id === localeId);
@@ -53,7 +54,7 @@ const TopNavigation = (props: TopNavigationProps) => {
         "bg-white",
       )}
     >
-      <div className="navbar-brand">
+      <div className={cx("navbar-brand", "top-navigation-logo")}>
         <NavLogo
           desktopLogo={desktopLogo}
           mobileLogo={mobileLogo}
@@ -78,17 +79,27 @@ const TopNavigation = (props: TopNavigationProps) => {
                 const dataTrackingKey = Util.kebabCase(
                   tealiumEvent || title || "",
                 );
-                const dataAttributes = {
-                  "data-topnav-dropdown": "true",
+                const hasChildren = Util.hasChildNodes(node.fields);
+                const dataAttributes: Record<string, string> = {
+                  "data-topnav-dropdown": hasChildren ? "true" : "false",
                   id: `dropdown-menu${index + 1}`,
                   "data-tracking-key": dataTrackingKey,
                 };
-                const pageSlug = Util.addIdToSlug(
-                  calculatedUrl || "",
-                  addIdToSlug,
-                );
-                const hasChildren = Util.hasChildNodes(node.fields);
 
+                if (!hasChildren) {
+                  if (addIdToSlug) {
+                    dataAttributes["data-nav-anchor-item"] = "true";
+                    dataAttributes["data-anchor-link"] = "true";
+                  } else {
+                    dataAttributes["data-nav-item"] = "true";
+                  }
+                }
+
+                const pageSlug = addIdToSlug
+                  ? `#${Util.kebabCase(title || linkTitle || "")}`
+                  : Util.addIdToSlug(calculatedUrl || "", addIdToSlug);
+
+                console.log("node.fields", pageSlug);
                 return (
                   <div
                     className={cx("main-menu")}

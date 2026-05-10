@@ -176,6 +176,7 @@ export const NavigationNodeLink = ({
     navTitle || "",
     dataAttributesWithDefaults,
   );
+  console.log("pageSlug", pageSlug);
   return (
     <DynamicLink
       slug={pageSlug || ""}

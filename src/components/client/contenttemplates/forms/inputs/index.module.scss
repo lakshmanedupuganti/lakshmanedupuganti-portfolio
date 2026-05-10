@@ -1,0 +1,30 @@
+@import "/styles/defaultincludes";
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin: 0 0 10px;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  div {
+    flex-grow: 1;
+  }
+}
+
+.prefix {
+  font-weight: 400;
+  align-self: center;
+  @include media-breakpoint-down(lg) {
+    margin: 0;
+  }
+}
+
+.disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}

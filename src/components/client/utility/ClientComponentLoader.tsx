@@ -48,6 +48,15 @@ const clientComponentMap: Record<string, ClientContentItemComponentImportInfo> =
     HeroAreaSwiper: {
       component: HeroAreaSwiper,
     },*/
+    HeadingCardsCtaSwiper: {
+      importFunc: async () => {
+        const ret = (
+          await import("@client/contenttemplates/containertemplates/HeadingCardsCtaSwiper")
+        ).default;
+        return ret;
+      },
+      intersectParams: defaultIntersectParams,
+    },
   };
 
 export type ClientTemplateLoaderProps = ClientContentItemComponentProps & {

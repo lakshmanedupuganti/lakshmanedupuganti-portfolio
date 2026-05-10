@@ -51,14 +51,16 @@ const FooterNavigation = (props: FooterNavigationProps) => {
       <div className={cx("container", "wrapper")}>
         <Row>
           <Col lg={3} className="mb-4 mb-lg-0">
-            <NavLogo
-              desktopLogo={desktopLogo}
-              mobileLogo={mobileLogo}
-              logoUrl={logoUrl}
-              dataAttributes={{
-                role: "img",
-              }}
-            />
+            <div className={cx("footer-logo")}>
+              <NavLogo
+                desktopLogo={desktopLogo}
+                mobileLogo={mobileLogo}
+                logoUrl={logoUrl}
+                dataAttributes={{
+                  role: "img",
+                }}
+              />
+            </div>
           </Col>
           <Col lg={9} className="mt-5">
             <Row>

@@ -1,0 +1,190 @@
+@import "/styles/defaultincludes";
+
+.eventCard {
+  position: relative;
+  padding: 1.4rem;
+  margin: 0 0 1rem;
+  background: var(--bkgColor-lightGrey);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1.4rem;
+    margin: 0 0 1.4rem;
+    flex-direction: row;
+  }
+
+  .eventCardImage {
+    position: relative;
+    border-radius: calc(var(--borderRadius, 5) * 1px);
+    overflow: hidden;
+    max-width: 100%;
+    height: 250px;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .eventCardText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+    @include media-breakpoint-up(lg) {
+      gap: 0.5rem;
+    }
+
+    .eventCardDate {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.selectedFilters {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    flex-wrap: wrap;
+  }
+
+  .selectedFilterButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    .buttonText {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      text-wrap: nowrap;
+      letter-spacing: 0px;
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
+    
+      &.white {
+        color: $primary-white;
+      }
+    
+      &.blue {
+        color: $primary-blue;
+      }
+   
+    }
+  }
+
+  .selectedFilter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    background-color: #{$dark-grey};
+    border: 1px solid #{$dark-grey};
+    color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #4d4a46;
+      border: 1px solid #4d4a46;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+.eventList {
+  margin-left: auto;
+}
+
+.sticky-filter {
+  position: sticky;
+  top: var(--topNavHeight);
+  z-index: 1000;
+}
+
+.selected-filter {
+  left: var(--filterPanelLeft);
+  width: var(--filterPanelWidth);
+  transition: height 0.3s ease;
+}
+
+.sticky {
+  > div {
+    position: fixed;
+    top: calc(var(--topNavHeight, 0) * 1px);
+    left: 0;
+    width: inherit;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    z-index: 100;
+    background: white;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 5%);
+
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+
+    .filterPanel {
+      border-radius: 0;
+    }
+  }
+}
+
+.selectedFiltersSticky {
+  height: calc(var(--selectedFiltersHeight) * 1px);
+  > div {
+    position: fixed;
+    top: calc(var(--topNavHeight, 0) * 1px);
+    z-index: 100;
+    padding: 20px;
+    width: calc(100% - var(--filterPanelWidth) * 1px);
+
+    left: calc(var(--filterPanelLeft));
+    background: white;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 5%);
+    transition: height 0.3s ease;
+  }
+}
+
+.noResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-charcoal, #333333);
+  min-height: 300px;
+}
+
+.eventCardCTA {
+   div {
+    width: initial;
+  }
+}

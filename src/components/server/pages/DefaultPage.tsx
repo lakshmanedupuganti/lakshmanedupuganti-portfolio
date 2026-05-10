@@ -22,7 +22,7 @@ const DefaultPage = async (props: AppPageProps) => {
     false,
   );
 
-  console.log("pageResult", pageResult);
+  // console.log("pageResult", pageResult);
 
   // TODO - handle pageResult.unsentCookies which will show when we have a RSC call /page JSON fetch/
   // pageResult.unsentCookies

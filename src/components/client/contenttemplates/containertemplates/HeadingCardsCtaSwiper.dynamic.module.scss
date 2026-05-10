@@ -1,0 +1,67 @@
+@import "/styles/defaultincludes";
+
+// @import "/node_modules/swiper/swiper.scss";
+// @import "node_modules/swiper/modules/navigation.scss";
+// @import "node_modules/swiper/modules/scrollbar.scss";
+// @import "node_modules/swiper/modules/effect-fade.scss";
+// @import "node_modules/swiper/modules/controller.scss";
+
+:root {
+  --swiper-navigation-top-offset: 95%;
+  --swiper-navigation-size: 15%;
+  --swiper-navigation-sides-offset: 30%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative !important;
+  width: 50px !important;
+  height: 50px !important;
+  position: unset !important;
+  margin-top: unset !important;
+  &::after {
+    all: unset !important;
+  }
+  svg {
+    fill: none !important;
+  }
+}
+
+.swiper-button-prev {
+  &.swiper-button-disabled {
+    opacity: 1;
+    .headingCardsCtaSwiper-prev-lineargradient {
+      stroke: none !important;
+    }
+  }
+  &.swiper-button-lock {
+    display: unset !important;
+  }
+}
+
+.swiper-button-next {
+  &.swiper-button-disabled {
+    opacity: 1;
+    .headingCardsCtaSwiper-next-lineargradient {
+      stroke: none !important;
+    }
+  }
+  &.swiper-button-lock {
+    display: unset !important;
+  }
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.04);
+
+    filter:
+      drop-shadow(0 10px 20px rgba(255, 122, 0, 0.25));
+  }
+}

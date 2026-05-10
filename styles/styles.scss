@@ -10,42 +10,64 @@
 @import "/node_modules/bootstrap/scss/root";
 @import "/node_modules/bootstrap/scss/utilities/api";
 @import "/node_modules/bootstrap/scss/close";
-@import "/node_modules/bootstrap/scss/modal";
+@import "/node_modules/bootstrap/scss/modal"; 
 
 :root {
+  // ===================
+  // GLOBAL VARIABLES
+  // ===================
+
   --navBarHeight: #{$navbar-height};
   --slider-position: 50%;
 
   --fontColor-white: #{$primary-white};
+  --fontColor-charcoal: #{$primary-charcoal};
+
+  --fontColor-fire-red: #{$primary-fire-red};
+  --fontColor-flame-orange: #{$primary-flame-orange};
+  --fontColor-golden-orange: #{$primary-golden-orange};
+  --fontColor-sun-yellow: #{$primary-sun-yellow};
+
+  --fontColor-darkGrey: #ffffff;
+  --fontColor-lightGrey: #000000;
+
+  --fontColor-firegradient: #ffffff;
+  --fontColor-sungradient: #000000;
+
+  --fontColor-error: #{$error};
 
   --bkgColor-white: #{$primary-white};
-  --bkgColor-veryLightGrey: #{$very-light-grey};
+
+  --bkgColor-fire-red: #{$primary-fire-red};
+  --bkgColor-flame-orange: #{$primary-flame-orange};
+  --bkgColor-golden-orange: #{$primary-golden-orange};
+  --bkgColor-sun-yellow: #{$primary-sun-yellow};
+
+  --bkgColor-lightOrange: #{$light-orange};
+  --bkgColor-lightYellow: #{$light-yellow};
+
   --bkgColor-lightGrey: #{$light-grey};
   --bkgColor-mediumGrey: #{$medium-grey};
   --bkgColor-darkGrey: #{$dark-grey};
-  --bkgColor-blue: #{$primary-blue};
-  --bkgColor-lightblue: #{$light-blue};
-  --bkgColor-hritageblue: #{$heritage-blue};
+
   --bkgColor-transparent: transparent;
-  --bkgColor-bluegradient: #{$gradients-reflected-blue};
-  --bkgColor-softbluegradient: #{$gradients-soft-blue};
-  --bkgColor-darkbluegradient: #{$gradients-dark-blue};
-  --bkgColor-purpletobluegradient: #{$gradients-purple-to-blue};
-  --bkgColor-bluetopurplegradient: #{$gradients-blue-to-purple};
-  --bkgColor-cyantopurplegradient: #{$gradient-cyan-to-purple};
+
+  --bkgColor-firegradient: #{$gradient-fire-horse};
+  --bkgColor-sungradient: #{$gradient-sun};
+  --bkgColor-firetextgradient: #{$gradient-fire-text};
+  --bkgColor-fireglowgradient: #{$gradient-fire-glow};
+  --bkgColor-warmlightgradient: #{$gradient-warm-light};
 
   --borderColor-default: #{$primary-charcoal};
-  --borderColor-blue: #{$primary-blue};
-  --borderColor-green: #{$green};
-  --borderColor-magenta: #{$magenta};
+
+  --borderColor-fire-red: #{$primary-fire-red};
+  --borderColor-flame-orange: #{$primary-flame-orange};
+  --borderColor-golden-orange: #{$primary-golden-orange};
+
   --borderColor-grey: #{$grey};
   --borderColor-lightGrey: #{$light-grey};
-  --borderColor-lightblue: #c1e1f1;
-  --borderColor-deepkGrey: #{$deep-grey};
-  --borderColor-heritageblue: #{$heritage-blue};
-  --borderColor-white: #{$medium-grey};
 
-  --bkgHoverColor-grey: #f6f6f6;
+  --borderColor-white: #{$primary-white};
 
   --btnHeight-sm: 50px;
   --btnHeight-md: 50px;
@@ -59,36 +81,27 @@
   --btnPadding-md: 0.625rem 3rem;
   --btnPadding-header-footer: 0.625rem 2rem;
 
-  --btnColor-blue: #{$primary-blue};
-  --btnColor-orange: #fe5000;
-  --btnColor-heritage-blue: #{$heritage-blue};
+  --btnColor-fire-red: #{$primary-fire-red};
+  --btnColor-flame-orange: #{$primary-flame-orange};
+  --btnColor-golden-orange: #{$primary-golden-orange};
   --btnColor-darkGrey: #{$deep-grey};
-  --btnColor-medium-grey: #{$medium-grey};
 
-  --btnHoverColor-blue: #00709e;
-  --btnHoverColor-orange: #913409;
-  --btnHoverColor-heritage-blue: #004878;
+  --btnHoverColor-fire-red: #b92205;
+  --btnHoverColor-flame-orange: #d94800;
+  --btnHoverColor-golden-orange: #d97706;
   --btnHoverColor-darkGrey: #373431;
-  --btnHoverColor-medium-grey: #d1d1d1;
 
-  --fontColor-blue: #ffffff;
-  --fontColor-veryLightGrey: #000000;
-  --fontColor-lightGrey: #000000;
-  --fontColor-mediumGrey: #000000;
-  --fontColor-darkGrey: #ffffff;
-  --fontColor-lightblue: #000000;
-  --fontColor-hritageblue: #ffffff;
-  --fontColor-transparent: #000000;
-  --fontColor-bluegradient: #ffffff;
-  --fontColor-softbluegradient: #000000;
-  --fontColor-darkbluegradient: #ffffff;
-  --fontColor-error: #{$error};
+  --bkgHoverColor-grey: #f6f6f6;
+  --bkgHoverColor-orange: #fff0e6;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 * {

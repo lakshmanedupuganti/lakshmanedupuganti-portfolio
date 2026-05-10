@@ -1,0 +1,73 @@
+@import "/styles/defaultincludes";
+
+.formGroupSection {
+  margin-bottom: 1.5rem;
+}
+
+.formComponentHeadingContainer, .errorContainer {
+  position: relative;
+  padding: 1rem 0rem 2rem;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  &.noHeadingContainer {
+    padding: 2.5rem 0rem;
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+      padding: 0rem;
+    }
+  }
+  .formComponentTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.errorContainer {
+  margin-bottom: 2rem !important;
+}
+
+
+.singleFieldView {
+  width: 100%;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+}
+
+.errorContent {
+  .errorHeadline, .errorBodyContent {
+    color: var(--fontColor-error);
+  }
+}
+
+.errorMessage {
+  color: var(--fontColor-error);
+  font-size: 0.875rem;
+  margin-top: -1rem;
+}
+
+.styledCalendly {
+  position: relative;
+  min-width: 100%;
+  min-height: 850px;
+  width: 100%;
+  height: 100%;
+  max-height: 850px;
+  @include media-breakpoint-up(lg) {
+    min-width: 500px;
+  }
+  iframe {
+    min-height: 850px;
+    width: 100%;
+    height: 100%;
+  }
+}

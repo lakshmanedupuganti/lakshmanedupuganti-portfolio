@@ -20,11 +20,12 @@
 }
 
 .styledButton {
-  --btnHeightDef: var(--btnHeight, var(--btnHeight-md));
-  --btnPaddingDef: var(--btnPadding, var(--btnPadding-md));
-  --btnFontSizeDef: var(--btnFontSize, var(--btnFontSize-md));
-  --btnColorDef: var(--btnColor, var(--btnColor-blue));
-  --btnHoverColorDef: var(--btnHoverColor, var(--btnHoverColor-blue));
+  --btnHeightDef: var(--btnHeight, 50px);
+  --btnPaddingDef: var(--btnPadding, 0.625rem 3rem);
+  --btnFontSizeDef: var(--btnFontSize, 0.875rem);
+
+  --btnColorDef: var(--btnColor, #e63312);
+  --btnHoverColorDef: var(--btnHoverColor, #b92205);
 
   border: 2px solid var(--btnColorDef);
   padding: var(--btnPaddingDef);
@@ -33,95 +34,170 @@
   display: inline-block;
   width: 100%;
 
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+
   &:hover,
   &:not(:disabled):not(.disabled):active,
   &:focus {
     border: 2px solid var(--btnHoverColorDef);
+    transform: translateY(-1px);
   }
 
-  // Primary button
+  // ==========================
+  // PRIMARY BUTTON
+  // ==========================
 
   &.primary {
-    background-color: var(--btnColorDef);
-    color: var(--fontColor-white, #fff);
+    background: linear-gradient(
+      90deg,
+      #e63312 0%,
+      #f95a00 55%,
+      #ff8c00 100%
+    );
+
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 8px 24px rgba(249, 90, 0, 0.25);
+
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:focus {
-      background-color: var(--btnHoverColorDef);
-      color: var(--fontColor-white, #fff);
+      background: linear-gradient(
+        90deg,
+        #c6280d 0%,
+        #e65100 55%,
+        #f57c00 100%
+      );
+
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(249, 90, 0, 0.35);
     }
+
     &:disabled {
-      background-color: var(--btnColorDef);
-      color: var(--fontColor-white, #fff);
-      border: 2px solid var(--btnColorDef);
+      background: #ffb38a;
+      color: #ffffff;
+      border: none;
+      opacity: 0.7;
+      cursor: not-allowed;
+      box-shadow: none;
     }
   }
 
-  // Secondary button
+  // ==========================
+  // SECONDARY BUTTON
+  // ==========================
 
   &.secondary {
-    background-color: var(--bkgColor-white, #fff);
-    color: var(--btnColorDef);
+    background-color: #ffffff;
+    color: #e63312;
+    border: 2px solid #f95a00;
+
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:focus {
-      background-color: var(--btnColorDef);
-      border: 2px solid var(--btnColorDef, #fff);
+      background: linear-gradient(
+        90deg,
+        #e63312 0%,
+        #f95a00 55%,
+        #ff8c00 100%
+      );
+
+      border: 2px solid #f95a00;
       color: #ffffff;
     }
+
     &:disabled {
-      background-color: var(--btnColorDef);
-      border: 2px solid var(--btnHoverColorDef, #fff);
-      color: #ffffff;
+      background-color: #fff4eb;
+      border: 2px solid #ffd6bf;
+      color: #c96d42;
+      cursor: not-allowed;
     }
   }
 
-  // Primary white button
+  // ==========================
+  // PRIMARY WHITE BUTTON
+  // ==========================
+
   &.primary-white {
-    background-color: var(--btnColorDef);
-    border: 2px solid var(--bkgColor-white, #fff);
+    background: linear-gradient(
+      90deg,
+      #e63312 0%,
+      #f95a00 55%,
+      #ff8c00 100%
+    );
+
+    border: 2px solid #ffffff;
     color: #ffffff;
+
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:focus {
-      background-color: var(--bkgColor-white, #fff);
-      border: 2px solid var(--bkgColor-white);
-      color: var(--btnColorDef);
+      background-color: #ffffff;
+      background-image: none;
+
+      border: 2px solid #ffffff;
+      color: #e63312;
     }
+
     &:disabled {
       background-color: #ffffff;
-      color: var(--btnColorDef);
+      color: #f95a00;
+      opacity: 0.7;
     }
   }
+
+  // ==========================
+  // TRANSPARENT BUTTON
+  // ==========================
 
   &.transparent {
     background-color: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
+
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:focus {
-      background-color: var(--btnHoverColorDef);
-      border: 2px solid var(--btnHoverColorDef);
+      background: linear-gradient(
+        90deg,
+        #e63312 0%,
+        #f95a00 55%,
+        #ff8c00 100%
+      );
+
+      border: 2px solid #f95a00;
       color: #ffffff;
     }
   }
 
-  // link type button
+  // ==========================
+  // LINK BUTTON
+  // ==========================
 
   &.link {
-    font-weight: 500;
+    font-weight: 600;
     height: 32px;
     min-height: auto;
-    padding: 0px;
+    padding: 0;
     border: none;
     display: flex;
     align-items: center;
+
+    background: transparent;
+    color: #f95a00;
+
     &:hover,
     &:not(:disabled):not(.disabled):active,
     &:focus {
       text-decoration: none;
       border: none;
+      color: #e63312;
+
       .linkbuttonArrow {
         animation: link-button-animation 0.7s linear infinite;
       }
@@ -133,11 +209,22 @@
     height: 32px;
     float: right;
     margin-left: 12px;
+
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: initial;
+
+    background: linear-gradient(
+      90deg,
+      #e63312 0%,
+      #f95a00 100%
+    );
+
+    color: #ffffff;
 
     &:hover {
       animation: link-button-animation 0.7s linear infinite;
@@ -149,18 +236,26 @@
   }
 }
 
-//TODO: re-work on this
+// ==========================
+// IMAGE BUTTON
+// ==========================
 
 .imageButton {
-  --btnHeightDef: var(--btnHeight, var(--btnHeight-sm));
+  --btnHeightDef: var(--btnHeight, 50px);
 
   cursor: pointer;
   filter: brightness(1);
+
   height: var(--btnHeightDef);
+
+  transition:
+    filter 0.3s ease,
+    transform 0.2s ease;
 
   &.active {
     &:hover {
-      filter: brightness(0.8);
+      filter: brightness(0.9);
+      transform: scale(1.03);
     }
   }
 

@@ -1,0 +1,75 @@
+@import "/styles/defaultincludes";
+
+.inputSelect {
+  --textColor: #{$primary-charcoal};
+  --borderColor: #a4a4a4;
+  --activeBorderColor: #{$heritage-blue};
+  --labelDisplay: initial;
+  --danger: #dc3545;
+
+  width: 100%;
+  margin: 15px 0 22px;
+  padding: 0 15px;
+  outline: none;
+  min-height: 54px;
+  line-height: 54px;
+  border: none;
+  border: 2px solid $light-grey;
+  border-radius: 8px;
+  transition: 0.2s ease all;
+  background: transparent;
+  color: var(--borderColor);
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+
+  .option {
+    cursor: pointer;
+    transition: 0.2s ease all;
+    display: block;
+    width: 100%;
+    line-height: 1.2em;
+    padding: 5px;
+    position: relative;
+
+    &.active {
+      color: var(--textColor);
+      background-color: $grey;
+    }
+  }
+  &:active,
+  &:focus,
+  &:not([data-value=""]) {
+    color: var(--textColor);
+  }
+  &.error {
+    border: 2px solid var(--danger) !important;
+    color: var(--danger) !important;
+  }
+}
+
+.options {
+  position: absolute;
+  top: 38px;
+  background: white;
+  border: 1px solid $grey;
+  width: calc(100% + 10px);
+  border-radius: 5px;
+  margin: 0 -6px;
+  z-index: 1;
+  max-height: calc(30px * 6);
+  overflow: auto;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  color: var(--textColor);
+}
+
+.selectIcon {
+  position: absolute;
+  right: 1.5rem;
+  top: 55%;
+  transform: translateY(-55%);
+  pointer-events: none;
+}

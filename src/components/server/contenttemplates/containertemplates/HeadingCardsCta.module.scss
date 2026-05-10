@@ -1,0 +1,466 @@
+@import "/styles/defaultincludes";
+@import "/styles/globalclasses";
+
+.wrapper {
+  position: relative;
+  padding: 0 15px;
+
+  background: var(--backgroundColor, #fff);
+
+  @include media-breakpoint-up(lg) {
+    padding: 35px 0;
+  }
+}
+
+.headingContainer {
+  position: relative;
+  padding: 1rem 0rem 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    width: 60%;
+  }
+
+  &.noHeadingContainer {
+    padding: 2.5rem 0rem;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 0rem;
+    }
+  }
+}
+
+.hasBackgroundColor {
+  >div {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.ctaContainer {
+  position: relative;
+  padding: 2.5rem 0rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  >div {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+    max-width: 100%;
+    width: auto;
+
+    >div {
+      width: auto;
+    }
+  }
+}
+
+.threeColumnsSpacing {
+  padding: 30px 40px;
+
+  .threeColumnsSpacingMain {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 85%;
+    }
+
+    .threeColumnsSpacingInner {
+      padding: 0 30px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.threeColumnsSpacingWithoutCarousel {
+  padding: 30px 40px;
+
+  .threeColumnsSpacingWithoutCarouselMain {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 85%;
+    }
+
+    .threeColumnsSpacingWithoutCarouselInner {
+      padding: 0;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.twoColumnsSpacing {
+  --twoColumnsSpacingWidth: 65;
+
+  .headingContainer {
+    @include media-breakpoint-up(lg) {
+      width: calc(var(--twoColumnsSpacingWidth) * 1%);
+    }
+  }
+
+  padding: 30px 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 100px;
+  }
+
+  .twoColumnsSpacingMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include media-breakpoint-up(lg) {
+      width: calc(var(--twoColumnsSpacingWidth) * 1%);
+    }
+
+    .twoColumnsSpacingInner {
+      padding: 0 30px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 60px;
+      }
+    }
+  }
+}
+
+.twoColumnsBigCards {
+  padding: 30px 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 100px;
+  }
+
+  .twoColumnsBigCardsMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include media-breakpoint-up(lg) {
+      width: 90%;
+    }
+
+    .twoColumnsBigCardsInner {
+      padding-bottom: 40px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 50px;
+      }
+
+      :global(.displayTitle5) {
+        @extend .displayTitle2;
+      }
+    }
+  }
+}
+
+.threeColumns {
+  padding: 30px 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .threeColumnsMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+}
+
+.threeColumnsWithoutCarousel {
+  padding: 30px 40px;
+
+  .threeColumnsWithoutCarouselMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.fourColumns {
+  padding: 0 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 15px;
+  }
+
+  .fourColumnsMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+}
+
+.fourColumnsWithoutCarousel {
+  padding: 30px 40px;
+
+  .fourColumnsWithoutCarouselMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-evenly;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.fourColumnsSpacing {
+  padding: 30px 40px;
+
+  .fourColumnsSpacingMain {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 85%;
+    }
+
+    .fourColumnsSpacingInner {
+      padding: 0 30px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.fourColumnsSpacingWithoutCarousel {
+  padding: 30px 40px;
+
+  .fourColumnsSpacingWithoutCarouselMain {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 85%;
+    }
+
+    .fourColumnsSpacingWithoutCarouselInner {
+      padding: 0;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.fiveColumns {
+  padding: 30px 35px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .fiveColumnsMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-evenly;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+}
+
+.fiveColumnsWithoutCarousel {
+  padding: 30px 40px;
+
+  .fiveColumnsWithoutCarouselMain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-evenly;
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 15px;
+  }
+
+  .ctaContainer {
+    @include media-breakpoint-down(sm) {
+      :global(.globalButton) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.fullWidthImage {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 30px auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.oneColumn {
+  padding: 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 30px 35px;
+  }
+
+  .contentText {
+    padding: 0 1rem;
+  }
+
+  .headingContainer {
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+  }
+}
+
+.swiper-buttons {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.swiperActiveIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.swiper-buttons {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.swiperRoot {
+  :global(.swiper-slide):not(:first-child) {
+    display: none;
+  }
+}
